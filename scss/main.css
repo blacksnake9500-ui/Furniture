@@ -1,1 +1,133 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+nav .container {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .container ul li {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+nav .container ul li:hover {
+  color: #B88E2F;
+}
+nav .container ul li::after {
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease;
+  background-color: #B88E2F;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+nav .container ul li:hover::after {
+  width: 100%;
+}
+nav .container h1 img {
+  animation: logo 4s linear infinite;
+}
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotateY(720deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hero {
+  background-image: url("../imgs/hero bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+}
+.hero .container {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.hero .container .hero_card {
+  width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FFF3E3;
+}
+.hero .container .hero_card h3 {
+  color: red;
+}
+.hero .container .hero_card h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #B88E2F;
+  padding: 20px 0px;
+}
+.hero .container .hero_card p {
+  color: red;
+  padding: 10px 0px;
+}
+.hero .container .hero_card button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #B88E2F;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .container .hero_card button:hover {
+  transform: scale(1.1);
+}
+.hero .container .hero_card button:active {
+  transform: scale(0.9);
+}/*# sourceMappingURL=main.css.map */
