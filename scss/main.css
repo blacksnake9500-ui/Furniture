@@ -6,6 +6,17 @@
   font-family: "Inter", sans-serif;
 }
 
+button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: scale(0.9);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -130,4 +141,274 @@ nav .container h1 img {
 }
 .hero .container .hero_card button:active {
   transform: scale(0.9);
+}
+
+.intro .container {
+  padding: 50px 0px;
+}
+.intro .container .intro_title {
+  padding: 30px 0px;
+  text-align: center;
+}
+.intro .container .intro_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.intro .container .intro_box .intro_card {
+  width: 400px;
+  text-align: center;
+  line-height: 40px;
+  overflow-x: hidden;
+}
+.intro .container .intro_box .intro_card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.two .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.two .container .two_title {
+  padding: 30px 0px;
+  text-align: center;
+}
+.two .container .two_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.two .container .two_box .two_card {
+  width: 300px;
+  background-color: rgba(212, 202, 202, 0.575);
+  padding: 10px;
+  overflow-y: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.two .container .two_box .two_card:hover .two_hide {
+  transform: translateY(0);
+}
+.two .container .two_box .two_card .two_card_top {
+  position: relative;
+}
+.two .container .two_box .two_card .two_card_top img {
+  width: 100%;
+}
+.two .container .two_box .two_card .two_card_top p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: two 3s linear infinite;
+}
+@keyframes two {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px red;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+.two .container .two_box .two_card .two_p1 {
+  color: gray;
+  padding: 5px 0px;
+}
+.two .container .two_box .two_card .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.two .container .two_box .two_card .price p {
+  padding: 5px 0px;
+  color: gray;
+  text-decoration: line-through;
+}
+.two .container .two_box .two_card .two_hide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateY(-500px);
+  background-color: rgba(0, 0, 0, 0.438);
+  transition: all 0.3s ease;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
+.two .container .two_box .two_card .two_hide button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #B88E2F;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+.two .container .two_box .two_card .two_hide button:hover {
+  transform: scale(1.1);
+}
+.two .container .two_box .two_card .two_hide button:active {
+  transform: scale(0.9);
+}
+.two .container .two_box .two_card .two_hide ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.two .container .two_bottom {
+  padding: 10px 20px;
+  border: 1px solid #B88E2F;
+  background-color: white;
+  color: #B88E2F;
+  border-radius: 10px 0px 10px 0px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.two .container .two_bottom:hover {
+  transform: scale(1.1);
+  border-radius: 0px 10px 0px 10px;
+}
+.two .container .two_bottom:active {
+  transform: scale(0.9);
+}
+
+.three {
+  background-color: #FFF3E3;
+}
+.three .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.three .container .three_card {
+  width: 400px;
+  position: relative;
+}
+.three .container .three_card p {
+  padding: 10px 0px;
+}
+.three .container .three_card button {
+  background-color: #B88E2F;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.three .container .three_card .three_info {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  padding: 20px;
+}
+.three .container .three_card .three_info button {
+  position: absolute;
+  right: -60px;
+  top: 60px;
+}
+.three .container .three_card2 button {
+  background-color: white;
+  color: #B88E2F;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  border: 1px solid #B88E2F;
+}
+
+.four .container {
+  padding: 50px 0px;
+}
+.four .container .four_title {
+  padding: 30px 0px;
+  text-align: center;
+}
+.four .container .four_box {
+  position: relative;
+}
+.four .container .four_box img:nth-of-type(1) {
+  position: absolute;
+  height: 300px;
+}
+.four .container .four_box img:nth-of-type(2) {
+  position: absolute;
+  top: 20px;
+  width: 400px;
+  left: 100px;
+}
+.four .container .four_box img:nth-of-type(3) {
+  position: absolute;
+  top: 310px;
+  height: 300px;
+}
+.four .container .four_box img:nth-of-type(4) {
+  position: absolute;
+  left: 200px;
+  top: 320px;
+  width: 300px;
+}
+.four .container .four_box img:nth-of-type(5) {
+  position: absolute;
+  left: 520px;
+  top: 100px;
+}
+.four .container .four_box img:nth-of-type(6) {
+  position: absolute;
+  right: 150px;
+  top: 20px;
+  width: 220px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.four .container .four_box img:nth-of-type(7) {
+  position: absolute;
+  right: 190px;
+  top: 340px;
+}
+.four .container .four_box img:nth-of-type(8) {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  top: 340px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.four .container .four_box img:nth-of-type(9) {
+  position: absolute;
+  right: 0px;
+  width: 130px;
+  top: 0px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
