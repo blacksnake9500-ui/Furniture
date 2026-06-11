@@ -348,6 +348,7 @@ nav .container h1 img {
 
 .four .container {
   padding: 50px 0px;
+  padding-bottom: 700px;
 }
 .four .container .four_title {
   padding: 30px 0px;
@@ -411,4 +412,37 @@ nav .container h1 img {
   top: 0px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+footer {
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+}
+footer .container {
+  padding: 50px 0px;
+  padding-top: 100px;
+}
+footer .container .footer_box {
+  padding: 30px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .container .footer_box .footer_card {
+  width: 300px;
+}
+footer .container .footer_box .footer_card h2 {
+  padding-bottom: 30px;
+}
+footer .container .footer_box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .container .footer_box ul li:nth-of-type(1) {
+  color: gray;
+}
+footer .container hr {
+  margin: 20px 0px;
 }/*# sourceMappingURL=main.css.map */
