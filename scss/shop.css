@@ -6,6 +6,11 @@
   font-family: "Inter", sans-serif;
 }
 
+a {
+  color: #B88E2F;
+  text-decoration: none;
+}
+
 button {
   transition: all 0.3s ease;
   cursor: pointer;
@@ -15,11 +20,6 @@ button:hover {
 }
 button:active {
   transform: scale(0.9);
-}
-
-a {
-  color: #B88E2F;
-  text-decoration: none;
 }
 
 .container {
@@ -105,72 +105,48 @@ nav .container h1 img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0px;
-}
-.hero .container {
-  padding: 100px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-.hero .container .hero_card {
-  width: 600px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #FFF3E3;
-}
-.hero .container .hero_card h3 {
-  color: red;
-}
-.hero .container .hero_card h1 {
-  font-size: 40px;
-  font-weight: 800;
-  color: #B88E2F;
-  padding: 20px 0px;
-}
-.hero .container .hero_card p {
-  color: red;
-  padding: 10px 0px;
-}
-.hero .container .hero_card button {
-  padding: 20px 40px;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  background-color: #B88E2F;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.hero .container .hero_card button:hover {
-  transform: scale(1.1);
-}
-.hero .container .hero_card button:active {
-  transform: scale(0.9);
-}
-
-.intro .container {
   padding: 50px 0px;
 }
-.intro .container .intro_title {
-  padding: 30px 0px;
-  text-align: center;
+.hero .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.intro .container .intro_box {
+.hero .container .hero_bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 0px;
+  background-color: #F9F1E7;
+  padding: 20px 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+.hero .container .hero_bottom .hero_bottom_card {
+  display: flex;
+  align-items: center;
   gap: 30px;
 }
-.intro .container .intro_box .intro_card {
-  width: 400px;
-  text-align: center;
-  line-height: 40px;
-  overflow-x: hidden;
+.hero .container .hero_bottom .hero_bottom_card ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid gray;
+  padding-right: 10px;
 }
-.intro .container .intro_box .intro_card img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.hero .container .hero_bottom .hero_bottom_card button {
+  background-color: white;
+  color: #B88E2F;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.hero .container .hero_bottom .hero_bottom_card button:focus {
+  background-color: #B88E2F;
+  color: white;
 }
 
 .two .container {
@@ -194,6 +170,7 @@ nav .container h1 img {
 }
 .two .container .two_box .two_card {
   width: 300px;
+  height: 470px;
   background-color: rgba(212, 202, 202, 0.575);
   padding: 10px;
   overflow-y: hidden;
@@ -208,6 +185,9 @@ nav .container h1 img {
 }
 .two .container .two_box .two_card .two_card_top img {
   width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .two .container .two_box .two_card .two_card_top p {
   position: absolute;
@@ -303,122 +283,6 @@ nav .container h1 img {
   transform: scale(0.9);
 }
 
-.three {
-  background-color: #FFF3E3;
-}
-.three .container {
-  padding: 50px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.three .container .three_card {
-  width: 400px;
-  position: relative;
-}
-.three .container .three_card p {
-  padding: 10px 0px;
-}
-.three .container .three_card button {
-  background-color: #B88E2F;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  color: white;
-}
-.three .container .three_card .three_info {
-  width: 200px;
-  background-color: rgba(255, 255, 255, 0.596);
-  border-radius: 20px;
-  position: absolute;
-  bottom: 30px;
-  left: 20px;
-  padding: 20px;
-}
-.three .container .three_card .three_info button {
-  position: absolute;
-  right: -60px;
-  top: 60px;
-}
-.three .container .three_card2 button {
-  background-color: white;
-  color: #B88E2F;
-  border-radius: 50%;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  border: 1px solid #B88E2F;
-}
-
-.four .container {
-  padding: 50px 0px;
-  padding-bottom: 700px;
-}
-.four .container .four_title {
-  padding: 30px 0px;
-  text-align: center;
-}
-.four .container .four_box {
-  position: relative;
-}
-.four .container .four_box img:nth-of-type(1) {
-  position: absolute;
-  height: 300px;
-}
-.four .container .four_box img:nth-of-type(2) {
-  position: absolute;
-  top: 20px;
-  width: 400px;
-  left: 100px;
-}
-.four .container .four_box img:nth-of-type(3) {
-  position: absolute;
-  top: 310px;
-  height: 300px;
-}
-.four .container .four_box img:nth-of-type(4) {
-  position: absolute;
-  left: 200px;
-  top: 320px;
-  width: 300px;
-}
-.four .container .four_box img:nth-of-type(5) {
-  position: absolute;
-  left: 520px;
-  top: 100px;
-}
-.four .container .four_box img:nth-of-type(6) {
-  position: absolute;
-  right: 150px;
-  top: 20px;
-  width: 220px;
-  height: 300px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.four .container .four_box img:nth-of-type(7) {
-  position: absolute;
-  right: 190px;
-  top: 340px;
-}
-.four .container .four_box img:nth-of-type(8) {
-  position: absolute;
-  right: 0px;
-  width: 150px;
-  top: 340px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.four .container .four_box img:nth-of-type(9) {
-  position: absolute;
-  right: 0px;
-  width: 130px;
-  top: 0px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 footer {
   border-top: 1px solid rgba(128, 128, 128, 0.452);
 }
@@ -448,6 +312,13 @@ footer .container .footer_box ul {
 footer .container .footer_box ul li:nth-of-type(1) {
   color: gray;
 }
+footer .container .footer_box ul li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .container .footer_box ul li:hover {
+  color: #B88E2F;
+}
 footer .container hr {
   margin: 20px 0px;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=shop.css.map */
