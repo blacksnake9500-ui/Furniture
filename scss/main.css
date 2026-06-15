@@ -133,16 +133,20 @@ nav .container h1 img {
   padding: 10px 0px;
 }
 .hero .container .hero_card button {
-  padding: 20px 40px;
+  padding: 10px 20px;
   border: none;
+  font-size: 35px;
   border-radius: 10px;
   color: white;
   background-color: #B88E2F;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.hero .container .hero_card button a {
+  color: white;
+}
 .hero .container .hero_card button:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .hero .container .hero_card button:active {
   transform: scale(0.9);
